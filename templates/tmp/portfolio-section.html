@@ -1,0 +1,208 @@
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Try Quotable Now!</h2>
+      <p>Upload a file or several files. These need to be either of .xlx or .csv format. Then query in English.</p>
+    </div>
+
+    <form id="file-upload-form" enctype="multipart/form-data">
+      <input id="file" name="input-b2" type="file" class="file" data-show-preview="false">
+      <input type="button" class="button" value="Upload" id="but_upload">
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $('input[type="file"]').change(function(e){
+            var filePath = e.target.files[0].pathname;
+            // alert(filePath);
+            var fileName = e.target.files[0].name;
+            // alert('The file "' + fileName +  '" has been selected.');
+        });
+        $("#but_upload").click(function() {
+            //event.preventDefault();
+            var fd = new FormData();
+            var files = $('#file')[0].files[0];
+             //fd.append('file', $('#file').prop('files')[0]);
+            fd.append('file', files);
+            // alert("I am here");
+
+            $.ajax({
+              type: 'POST',
+              url:  '/upload',
+              data: fd,
+              contentType: false,
+              cache: false,
+              processData: false,
+              success: function(response){
+                        if(response != 0){
+                           alert('file uploaded');
+                        }
+                        else{
+                            alert('file not uploaded');
+                        }
+                    },
+            });
+          });
+          // Add query related actions
+          $("#try_it_out_q_submit").click(function() {
+                var try_it_out_q = $("#try_it_out_q");
+                // alert(demo_q.val())
+                // #$('#demo_result').text(demo_option.text());
+                $.getJSON('/answer_query', {
+                  query_q: try_it_out_q.val(),
+                }, function(data) {
+                  $('#try_it_out_a').text(data.result)
+                });
+                return false;
+              });
+
+       });
+    </script>
+
+
+
+
+
+  <!-- <div class="input-group mb-3">
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="inputGroupFile02">
+      <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+    </div>
+    <div class="input-group-append">
+      <span class="input-group-text" id="">Upload</span>
+    </div>
+  </div> -->
+
+  <p></p>
+
+  <div class="form-group">
+    <label for="try_it_out_q"><h5>Enter your Query here:</h5></label>
+    <textarea class="form-control" id="try_it_out_q" rows="1"></textarea>
+  </div>
+
+
+    <form>
+      <button type="button" class="btn btn-sm btn-outline-success" id="try_it_out_q_submit">Submit</button>
+    </form>
+
+    <p>
+    </p>
+    <form class="">
+      <div class="form-group">
+        <p>
+          <textarea class="form-control" id="try_it_out_a" rows="1" readonly></textarea>
+          <!-- <input class="form-control form-control-lg" id="demo_a" type="text" placeholder="Query output from Quotable" readonly rows="2"> -->
+        </p>
+      </div>
+    </form>
+
+
+
+    <!-- <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+      <li data-filter="*" class="filter-active">All</li>
+      <li data-filter=".filter-app">App</li>
+      <li data-filter=".filter-card">Card</li>
+      <li data-filter=".filter-web">Web</li>
+    </ul>
+
+    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>App 1</h4>
+          <p>App</p>
+          <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>Web 3</h4>
+          <p>Web</p>
+          <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>App 2</h4>
+          <p>App</p>
+          <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>Card 2</h4>
+          <p>Card</p>
+          <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>Web 2</h4>
+          <p>Web</p>
+          <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>App 3</h4>
+          <p>App</p>
+          <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>Card 1</h4>
+          <p>Card</p>
+          <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>Card 3</h4>
+          <p>Card</p>
+          <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>Web 3</h4>
+          <p>Web</p>
+          <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+    </div> -->
+
+  </div>
+</section><!-- End Portfolio Section -->

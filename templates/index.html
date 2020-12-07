@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Quotable - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename="img/favicon.png") }}" rel="icon">
+  <link href="{{ url_for('static', filename="img/apple-touch-icon.png") }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename="vendor/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename="vendor/icofont/icofont.min.css") }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename="vendor/boxicons/css/boxicons.min.css") }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename="vendor/remixicon/remixicon.css") }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename="vendor/venobox/venobox.css") }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename="vendor/owl.carousel/assets/owl.carousel.min.css") }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename="vendor/aos/aos.css") }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename="css/style.css") }}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v2.2.1
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body><script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.13'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="#hero">Quotable</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#hero"></i> <span>Home</span></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Demo</a></li>
+          <li><a href="#portfolio">Try It Out</a></li>
+          <li><a href="#team">Team</a></li>
+          <!-- <li class="drop-down"><a href="">Drop Down</a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="drop-down"><a href="#">Deep Drop Down</a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li> -->
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a href="#about" class="get-started-btn scrollto">Get Started</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Question Answering for Tabular Data</h1>
+          <h2>No SQL, No problem! Use natural language to derive insights from data</h2>
+          <div class="d-lg-flex">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="{{ url_for('static', filename="img/hero-img-quotable.png") }}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Our Product</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Quotable is a Data Assistant which uses cutting-edge Natural Language Processing (NLP) techniques to query tables.
+              Generally, you will need to be an expert at Structured Query Language (SQL) to query tables. SQL can be complex and difficult to learn.
+              With Quotable, you can query tables in plain English! It is very simple to use - Just upload your tables, ask your questions,
+              and make your data talk to you. Quotable is perfect for you if you are experiencing "SQL pains" such as below:
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> You have to generate instantaneous insights for your execs as a part of an Enterprise BI Team</li>
+              <li><i class="ri-check-double-line"></i> You are a lay consumer who wants insights into data, but don't have SQL expertise</li>
+            </ul>
+            <a href="#why-us" class="btn-learn-more scrollto">Learn More</a>
+          </div>
+          <!-- <div class="col-lg-6 pt-4 pt-lg-0"> -->
+          <div class="col-lg-6">
+            <!-- <p> -->
+            <h4>Quotable for Enterprise BI</h4>
+            As an executive in a large enterprise, you want your BI team to provide quick insights on revenues for your product lines. However, every
+            time you ask a question, the BI team needs another week to get back to you. With Quotable, you don't need to wait, and you don't need to know SQL either!
+            Just ask your question in English and get an instantaneous response.
+            <p>
+            <h4>Quotable for Consumers</h4>
+            You are a basketbal enthusiast, say, and no stats expert. You want to know how well Lebron James did in the 2020 season compared to others.
+            You do a Google search, but there are no straight answers. What do you do? With Quotable, you just type your question in, and we do the rest of the magic
+            and get you a straight answer.
+            </p>
+            <!-- </p> -->
+            <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+        <!-- <div class="container" data-aos="fade-up"> -->
+
+        <div class="section-title">
+          <h2>How it works</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3><strong>Just Upload your tables and query away!</strong></h3>
+              <p>
+                Quotable lets you upload a table or set of tables.
+                Our Augmented Question Answering (AQuA) adds more details that are needed for answering your questions.
+                And then you query away.
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>1</span> Upload your tables <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
+                    <p>
+                      You can upload .csv or .xlx formats. We will support other formats in the future.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>2</span> Quotable prepares your tables for Querying<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+                    <p>
+                      On the fly, Quotable prepares your tabes for Querying. We perform a number of operations such as identifying the table to query,
+                      breaking down tables into smaller chunks for NLP processing, adding new rows or colums if needed.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>3</span> Ask Questions and Get Answers <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                    <p>
+                      You can then query your tables in English. Ask questions and get instant answers.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 flex-column align-items-stretch order-1 order-lg-2 img" style='background-image: url("{{ url_for('static', filename="img/how-it-works-2.png") }}");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+          <!-- <div class="col-lg-5 align-items-stretch order-1 order-sm-1 img" style='background-image: url("{{ url_for('static', filename="img/how-it-works.png") }}");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Quotable Architecture</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="{{ url_for('static', filename="img/architecture.png") }}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>Key Technologies</h3>
+            <p class="font-italic">
+              Quotable uses two main technologies for its product
+            </p>
+
+            <div class="accordion-list">
+              <ul>
+                <!-- <li>
+              <a data-toggle="collapse" class="collapse" href="#accordion-list-4"><span>1</span> Upload your tables <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="accordion-list-4" class="collapse show" data-parent=".accordion-list">
+                <p>
+                  You can upload .csv or .xlx formats. We will support other formats in the future.
+                </p>
+              </div>
+            </li> -->
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-5" class="collapsed"><span>1</span> <strong>Augmentation for Question Answering</strong></a>
+                  <!-- <div id="accordion-list-5" class="collapse" data-parent=".accordion-list"> -->
+                  <p>
+                    AQuA is the patentable innovation which prepares user tables for querying. AQuA has 3 major functions:
+                  <ul>Splitting larger tables into smaller ones to feed our NLP model</ul>
+                  <ul>Preprocessing and modification of table rows and colums</ul>
+                  <ul>Augmenting existing rows and columns with derived rows and columns</ul>
+                  </p>
+                  <!-- </div> -->
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-6" class="collapsed"><span>2</span> <strong>Pretrained BERT model for Question Answering</strong></a>
+                  <!-- <div id="accordion-list-6" class="collapse" data-parent=".accordion-list"> -->
+                  <p>
+                    We used a BERT model which is pretrained with table data to perform natural language based Question Answering. For our first version of Quotable,
+                    we are using a Google model called TAPAS.
+                  </p>
+                  <!-- </div> -->
+                </li>
+
+              </ul>
+            </div>
+            <!-- <div class="skills-content">
+
+          <div class="progress">
+            <span class="skill">HTML <i class="val">100%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">CSS <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">JavaScript <i class="val">75%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Photoshop <i class="val">55%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div> -->
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Demo: Basketball Trivia!</h2>
+          <p>
+            For our demo, we uploaded two tables into Quotable from: <a href="https://stats.nba.com">NBA Stats Portal</a>
+          </p>
+          <p>
+            <li><a href="https://stats.nba.com/alltime-leaders/?SeasonType=Regular%20Season">All-time NBA Leaders for Regular Season Games</a></li>
+            <li><a href="https://stats.nba.com/alltime-leaders/?SeasonType=Playoffs">All-time NBA Leaders for Playoff Games</a></li>
+          </p>
+          <p>
+            You can either use some queries we constructed for the demo, or try out your own query based on these datasets.
+          </p>
+        </div>
+
+        <!-- <div class="dropdown text-center">
+          <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Queries for Demo
+          </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Query 1</a>
+          <a class="dropdown-item" href="#">Query 2</a>
+          <a class="dropdown-item" href="#">Query 3</a>
+        </div>
+      </div> -->
+
+      <!-- queries for demo -->
+      <!-- Put these in a database later -->
+      <!-- demo_queries = {
+        1: "What player has the most career assists?",
+        2: "What player has the highest career PPG?",
+        3: "What player has the highest career 3-pt FG percentage?",
+        4: "Which of these players has the all-time record for most appearances in the playoffs, with 259 games?",
+        5: "Which player appeared in the most regular season games of all time, with 1611 games?",
+        6: "Who has the most career rebounds?",
+        7: "What player appeared in the most career NBA games?",
+        8: "Who has the most career points in the playoffs?",
+        9: "What player has the highest career FT percentage?",
+        10: "What player has the most career personal fouls?"
+      } -->
+
+      <form class="" method="post">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1"><h5>Select Query from drop down:</h5></label>
+          <select class="form-control" id="demoSelection">
+            <option>What NBA player has the most assists?</option>
+            <option>What NBA player has the most assists in the playoffs?</option>
+            <option>What NBA player has the most points per game played?</option>
+            <option>Which players have exactly 1828 points in the NBA playoffs?</option>
+            <option>Which player has played exactly 123 games in the NBA playoffs?</option>
+            <option>What player has the most career assists?</option>
+            <option>What player has the highest career points per game played?</option>
+            <option>What player has the highest career 3 pointer percentage?</option>
+            <option>Which of these players has the all-time record for most appearances in the playoffs, with 259 games?</option>
+            <option>Which player appeared in the most regular season games of all time, with 1611 games?</option>
+            <option>What NBA player has the highest total number of rebounds?</option>
+            <option>What player has the highest games played?</option>
+            <option>Who has the most career points in the playoffs?</option>
+            <option>What player has the highest free throws percentage?</option>
+            <option>What player has the most career personal fouls?</option>
+          </select>
+        </div>
+        <p></p>
+        <button type="button" class="btn btn-sm btn-outline-success" id="demo_submit">Submit Query</button>
+        <!-- <p id="demo_result"> </p>  -->
+        <p></p>
+
+        <form class="">
+          <div class="form-group">
+            <p>
+              <textarea class="form-control" id="demo_result" rows="1" readonly></textarea>
+            </p>
+          </div>
+        </form>
+
+        <!-- Capturing value of demo option here -->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <script type=text/javascript>
+          $(function() {
+            $('a#demo_submit').bind('click', function() {
+            $.getJSON('/answer_query', {
+              proglang: $('input[name="proglang"]').val(),
+            }, function(data) {
+              $("#result").text(data.result);
+            });
+            return false;
+            });
+          });
+        </script>
+        <script>
+            $(document).ready(function() {
+              $("#demo_submit").click(function() {
+                $("#try_it_out_q_submit").prop('disabled',true);
+                $("#demo_q_submit").prop('disabled',true);
+                $("#demo_submit").prop('disabled',true);
+                var demo_option = $("#demoSelection option:selected");
+                $('#demo_submit').text("Evaluating Query...")
+                $('#demo_result').text(" ")
+                $('#demo_submit').addClass("btn-outline-danger").removeClass("btn-outline-success")
+                // #$('#demo_result').text(demo_option.text());
+                $.getJSON('/answer_query', {
+                  query_q: demo_option.text(),
+                }, function(data) {
+                  $('#demo_result').text(data.result)
+                  $('#demo_submit').text("Submit Query")
+                  $('#demo_submit').addClass("btn-outline-success").removeClass("btn-outline-danger")
+                  $("#try_it_out_q_submit").prop('disabled',false);
+                  $("#demo_q_submit").prop('disabled',false);
+                  $("#demo_submit").prop('disabled',false);
+                });
+                return false;
+                // str = demo_option.text();
+              });
+              $("#demo_q_submit").click(function() {
+                $("#try_it_out_q_submit").prop('disabled',true);
+                $("#demo_q_submit").prop('disabled',true);
+                $("#demo_submit").prop('disabled',true);
+                var demo_q = $("#demo_query_in");
+                $('#demo_q_submit').text("Evaluating Query...")
+                $('#demo_a').text(" ")
+                $('#demo_q_submit').addClass("btn-outline-danger").removeClass("btn-outline-success")
+                $.getJSON('/answer_query', {
+                  query_q: demo_q.val(),
+                }, function(data) {
+                  $('#demo_a').text(data.result)
+                  $('#demo_q_submit').text("Submit Query")
+                  // $('#try_it_out_q_submit').css('background-color', 'green')
+                  $('#demo_q_submit').addClass("btn-outline-success").removeClass("btn-outline-danger")
+                  $("#try_it_out_q_submit").prop('disabled',false);
+                  $("#demo_q_submit").prop('disabled',false);
+                  $("#demo_submit").prop('disabled',false);
+                });
+                return false;
+              });
+              // $("#demo_q_submit").click(function() {
+              //       var demo_q = $("#demo_query_in");
+              //       // alert(demo_q.val())
+              //       // #$('#demo_result').text(demo_option.text());
+              //       $.getJSON('/answer_query', {
+              //         query_q: demo_q.val(),
+              //       }, function(data) {
+              //         $('#demo_a').text(data.result)
+              //       });
+              //       return false;
+              //     });
+            });
+        </script>
+
+        <!-- own query -->
+
+        <div class="form-group">
+          <label for="demo_query_in"><h5>Or Enter your Query here:</h5></label>
+          <textarea class="form-control" id="demo_query_in" rows="1"></textarea>
+        </div>
+
+        <!-- <div class="form-group row">
+          <label for="queryinput" class="col-sm-1 col-form-label">Question</label>
+          <div class="col-sm-11">
+            <input type="text" class="form-control" id="queryinput" placeholder="Your question here">
+          </div>
+        </div> -->
+      <form>
+        <button type="button" class="btn btn-sm btn-outline-success" id="demo_q_submit">Submit Query</button>
+      </form>
+
+      <p>
+      </p>
+
+      <form class="">
+        <div class="form-group">
+          <p>
+            <textarea class="form-control" id="demo_a" rows="1" readonly></textarea>
+            <!-- <input class="form-control form-control-lg" id="demo_a" type="text" placeholder="Query output from Quotable" readonly rows="2"> -->
+          </p>
+        </div>
+      </form>
+
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Try Quotable Now!</h2>
+      <p>First provide a login name - something unique like your first initial_last name. Quotable will upload your files to a directory with your login name</p>
+      <p>Then Upload a file or several files one at a time. Only .xls, .xlsx or .csv format are allowed.</p>
+      <p>Then ask your questions in English</p>
+
+    </div>
+
+    <!-- <form action = "" method = "post">
+       <p><input type = text name = username/></p>
+       <p<<input type = submit value = Login/></p>
+    </form> -->
+
+    <!-- <form class="form-inline">
+      <div class="form-group">
+        <input type="button" class="button" value="Login" id="login_upload">
+        <input type="login" id="login1" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+        <small id="passwordHelpInline" class="text-muted">
+          Something unique like your first initial + last name (ex: vnagapudi)
+        </small>
+        <p></p>
+      </div>
+    </form> -->
+
+    <div class="form-group">
+      <label for="login_id"><h5>1. Enter your login id here:</h5></label>
+      <textarea class="form-control col-sm-3" id="login_id" rows="1"></textarea>
+    </div>
+
+
+
+    <form>
+      <button type="button" class="btn btn-sm btn-outline-success" id="but_login">Login</button>
+    </form>
+
+    <p></p>
+
+    <form id="file-upload-form" enctype="multipart/form-data">
+      <label for="input-b2"><h5>2. Add your .xlx or .csv file(s). :</h5></label>
+      <p></p>
+      <input id="file" name="input-b2" type="file" class="file" accept=".xls,.xlsx,.csv" data-show-preview="false">
+      <input type="button" class="button" value="Upload" id="but_upload">
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $('input[type="file"]').change(function(e){
+            var filePath = e.target.files[0].pathname;
+            // alert(filePath);
+            var fileName = e.target.files[0].name;
+            // alert('The file "' + fileName +  '" has been selected.');
+        });
+        $("#but_upload").click(function() {
+            //event.preventDefault();
+            var fd = new FormData();
+            var files = $('#file')[0].files[0];
+             //fd.append('file', $('#file').prop('files')[0]);
+            fd.append('file', files);
+            // alert("I am here");
+
+            $.ajax({
+              type: 'POST',
+              url:  '/upload',
+              data: fd,
+              contentType: false,
+              cache: false,
+              processData: false,
+              success: function(response){
+                        if(response != 0){
+                           alert('file uploaded');
+                        }
+                        else{
+                            alert('file not uploaded');
+                        }
+                    },
+            });
+          });
+          // Add query related actions
+          $("#try_it_out_q_submit").click(function() {
+            $("#try_it_out_q_submit").prop('disabled',true);
+            $("#demo_q_submit").prop('disabled',true);
+            $("#demo_submit").prop('disabled',true);
+            var try_it_out_q = $("#try_it_out_q");
+            $('#try_it_out_q_submit').text("Evaluating Query...")
+            $('#try_it_out_a').text(" ")
+            $('#try_it_out_q_submit').addClass("btn-outline-danger").removeClass("btn-outline-success")
+            // $('#try_it_out_q_submit').css('background-color', 'orange')
+            // $(this).text($(this).hasClass('red_button') ? 'Starting Query': 'Finished Query');
+            // $(this).toggleClass('red_button');
+            // $(this).toggleClass('green_button');
+            // alert(demo_q.val())
+            // #$('#demo_result').text(demo_option.text());
+            $.getJSON('/answer_query', {
+              query_q: try_it_out_q.val(),
+            }, function(data) {
+              $('#try_it_out_a').text(data.result)
+              $('#try_it_out_q_submit').text("Submit Query")
+              // $('#try_it_out_q_submit').css('background-color', 'green')
+              $('#try_it_out_q_submit').addClass("btn-outline-success").removeClass("btn-outline-danger")
+              $("#try_it_out_q_submit").prop("disabled",false);
+              $("#demo_q_submit").prop('disabled',false);
+              $("#demo_submit").prop('disabled',false);
+            });
+            return false;
+          });
+
+
+          $("#but_login").click(function() {
+            var login_id = $("#login_id");
+            $.getJSON('/login', {
+              login_id: login_id.val(),
+            }, function(data) {
+              $('#login_id_resp').text(data.result)
+            });
+            return false;
+          });
+
+          // $("#but_login").click(function() {
+          //   // var login_id = $("#login_id");
+          //   var fd1 = new FormData();
+          //   $.ajax({
+          //     type: 'POST',
+          //     url:  '/login',
+          //     data : {'data':fd1},
+          //     contentType: false,
+          //     cache: false,
+          //     processData: false,
+          //     success: function(response){
+          //       if(response != 0){
+          //         alert('file uploaded');
+          //       }
+          //       else{
+          //         alert('file not uploaded');
+          //       }
+          //     },
+          //   });
+          // });
+
+       });
+    </script>
+
+
+
+
+
+  <!-- <div class="input-group mb-3">
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="inputGroupFile02">
+      <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+    </div>
+    <div class="input-group-append">
+      <span class="input-group-text" id="">Upload</span>
+    </div>
+  </div> -->
+
+  <p></p>
+
+  <div class="form-group">
+    <label for="try_it_out_q"><h5>3. Enter your Query here:</h5></label>
+    <textarea class="form-control" id="try_it_out_q" rows="1"></textarea>
+  </div>
+
+
+    <form>
+      <button type="button" class="btn btn-sm btn-outline-success" id="try_it_out_q_submit">Submit Query</button>
+    </form>
+
+    <p>
+    </p>
+    <form class="">
+      <div class="form-group">
+        <p>
+          <textarea class="form-control" id="try_it_out_a" rows="1" readonly></textarea>
+          <!-- <input class="form-control form-control-lg" id="demo_a" type="text" placeholder="Query output from Quotable" readonly rows="2"> -->
+        </p>
+      </div>
+    </form>
+
+    <script type="text/javascript">
+    $('#try_it_out_q_submit').on('click', function() {
+
+    });
+    </script>
+
+
+
+    <!-- <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+      <li data-filter="*" class="filter-active">All</li>
+      <li data-filter=".filter-app">App</li>
+      <li data-filter=".filter-card">Card</li>
+      <li data-filter=".filter-web">Web</li>
+    </ul>
+
+    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>App 1</h4>
+          <p>App</p>
+          <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>Web 3</h4>
+          <p>Web</p>
+          <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>App 2</h4>
+          <p>App</p>
+          <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>Card 2</h4>
+          <p>Card</p>
+          <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>Web 2</h4>
+          <p>Web</p>
+          <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>App 3</h4>
+          <p>App</p>
+          <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>Card 1</h4>
+          <p>Card</p>
+          <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>Card 3</h4>
+          <p>Card</p>
+          <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+       <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg"class="img-fluid" alt=""></div>
+        <div class="portfolio-info">
+          <h4>Web 3</h4>
+          <p>Web</p>
+          <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+    </div> -->
+
+  </div>
+</section><!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Meet the team that is making Quotable come alive!</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="{{ url_for('static', filename="img/team/team-1.jpg") }}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Venky Nagapudi</h4>
+                <span>Head, Product</span>
+                <p>Venky heads up Product for Quotable. He is also in charge of the Website and the Demo</p>
+                <div class="social">
+                  <!-- <a href=""><i class="ri-twitter-fill"></i></a>
+              <a href=""><i class="ri-facebook-fill"></i></a>
+              <a href=""><i class="ri-instagram-fill"></i></a> -->
+                  <a href="https://www.linkedin.com/in/venkatesh-nagapudi-4415a2/"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="{{ url_for('static', filename="img/team/team-2.png") }}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Kirk Duval</h4>
+                <span>Head, Data Science</span>
+                <p>Kirk heads up Data Science for Quotable. He is bringing our innovative AQuA technology to life.</p>
+                <div class="social">
+                  <!-- <a href=""><i class="ri-twitter-fill"></i></a>
+              <a href=""><i class="ri-facebook-fill"></i></a>
+              <a href=""><i class="ri-instagram-fill"></i></a> -->
+                  <a href="https://www.linkedin.com/in/kirk-duval-1787ab56/"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="{{ url_for('static', filename="img/team/team-3.png") }}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Amin Fardi</h4>
+                <span>Head, Engineering</span>
+                <p>Amin heads up Engineering for Quotable. He works on Modeling and Validation of our technology</p>
+                <div class="social">
+                  <!-- <a href=""><i class="ri-twitter-fill"></i></a>
+              <a href=""><i class="ri-facebook-fill"></i></a>
+              <a href=""><i class="ri-instagram-fill"></i></a> -->
+                  <a href="https://www.linkedin.com/in/amin-fardi/"> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-6 mt-4">
+        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+          <div class="pic"><img src="{{ url_for('static', filename="img/team/team-4.jpg") }}" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Amanda Jepson</h4>
+            <span>Accountant</span>
+            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+            <div class="social">
+              <a href=""><i class="ri-twitter-fill"></i></a>
+              <a href=""><i class="ri-facebook-fill"></i></a>
+              <a href=""><i class="ri-instagram-fill"></i></a>
+              <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Our business office is located in the crucible of innovation: the Silicon Valley.
+            We have a branch office in Canada where we design our cutting edge models.
+            If you want to get more info about Quotable and our products, please leave us your contact below and we will get back to you.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>University of California, Berkeley</p>
+              </div>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@quotable.com</p>
+              </div>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 408 935 9541</p>
+              </div>
+
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
+            <form method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <!-- <div class="footer-newsletter">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h4>Join Our Newsletter</h4>
+          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>Arsha</h3>
+          <p>
+            A108 Adam Street <br>
+            New York, NY 535022<br>
+            United States <br><br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Social Networks</h4>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <div class="social-links mt-3">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom clearfix">
+    <!-- <div class="copyright">
+      &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+    <!-- You can delete the links only if you purchased the pro version. -->
+    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+    <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+    <!-- </div> --> -->
+    </div> -->
+  </footer><!-- End Footer -->
+  -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename="vendor/jquery/jquery.min.js") }}"></script>
+  <script src="{{ url_for('static', filename="vendor/bootstrap/js/bootstrap.bundle.min.js") }}"></script>
+  <script src="{{ url_for('static', filename="vendor/jquery.easing/jquery.easing.min.js") }}"></script>
+  <!-- <script src="{{ url_for('static', filename="vendor/php-email-form/validate.js") }}"></script> -->
+  <script src="{{ url_for('static', filename="vendor/waypoints/jquery.waypoints.min.js") }}"></script>
+  <script src="{{ url_for('static', filename="vendor/isotope-layout/isotope.pkgd.min.js") }}"></script>
+  <script src="{{ url_for('static', filename="vendor/venobox/venobox.min.js") }}"></script>
+  <script src="{{ url_for('static', filename="vendor/owl.carousel/owl.carousel.min.js") }}"></script>
+  <script src="{{ url_for('static', filename="vendor/aos/aos.js") }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename="js/main.js") }}"></script>
+
+</body>

@@ -1,0 +1,41 @@
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Try Quotable Now!</h2>
+      <p>Upload a file or several files. These need to be either of .xlx or .csv format. Then query in English.</p>
+    </div>
+
+    <form method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=Upload>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+    <form class="" method="post">
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Enter your Query here:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+      </div>
+
+      <button type="button" class="btn btn-sm btn-outline-success">Submit</button>
+    </form>
+
+    <p>
+    </p>
+
+    <form class="">
+      <div class="form-group">
+        <p>
+          <input class="form-control form-control-lg" type="text" placeholder="Query output from Quotable" readonly rows="2">
+        </p>
+      </div>
+    </form>
+
+
+  </div>
+</section><!-- End Portfolio Section -->

@@ -1,0 +1,34 @@
+{% extends "template.html" %}
+
+{% set page="home" %}
+
+{% block meta %}
+  <title>Quotable - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+{% endblock %}
+
+{% block content %}
+
+  {% include "hero.html" %}
+
+  <main id="main">
+
+
+    {% include "about-section.html" %}
+
+    {% include "why-us-section.html" %}
+
+    {% include "skills-section.html" %}
+
+    {% include "services-section.html" %}
+
+    {% include "portfolio-section.html" %}
+
+    {% include "team-section.html" %}
+
+    {% include "contact-section.html" %}
+
+  </main><!-- End #main -->
+
+{% endblock %}

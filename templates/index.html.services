@@ -1,0 +1,23 @@
+{% extends "template.html" %}
+
+{% set page="home" %}
+
+{% block meta %}
+  <title>Quotable - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+{% endblock %}
+
+{% block content %}
+
+
+  <main id="main">
+
+
+
+    {% include "services-section.html" %}
+
+
+  </main><!-- End #main -->
+
+{% endblock %}

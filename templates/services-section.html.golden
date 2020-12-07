@@ -1,0 +1,222 @@
+<!-- ======= Services Section ======= -->
+<section id="services" class="services section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Demo: Basketball Trivia!</h2>
+      <p>
+        For our demo, we uploaded two tables into Quotable from: <a href="https://stats.nba.com">NBA Stats Portal</a>
+      </p>
+      <p>
+        <li><a href="https://stats.nba.com/alltime-leaders/?SeasonType=Regular%20Season">All-time NBA Leaders for Regular Season Games</a></li>
+        <li><a href="https://stats.nba.com/alltime-leaders/?SeasonType=Playoffs">All-time NBA Leaders for Playoff Games</a></li>
+      </p>
+      <p>
+        You can either use some queries we constructed for the demo, or try out your own query based on these datasets.
+      </p>
+    </div>
+
+    <!-- <div class="dropdown text-center">
+      <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Queries for Demo
+      </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Query 1</a>
+      <a class="dropdown-item" href="#">Query 2</a>
+      <a class="dropdown-item" href="#">Query 3</a>
+    </div>
+  </div> -->
+
+  <!-- queries for demo -->
+  <!-- Put these in a database later -->
+  <!-- demo_queries = {
+    1: "What player has the most career assists?",
+    2: "What player has the highest career PPG?",
+    3: "What player has the highest career 3-pt FG percentage?",
+    4: "Which of these players has the all-time record for most appearances in the playoffs, with 259 games?",
+    5: "Which player appeared in the most regular season games of all time, with 1611 games?",
+    6: "Who has the most career rebounds?",
+    7: "What player appeared in the most career NBA games?",
+    8: "Who has the most career points in the playoffs?",
+    9: "What player has the highest career FT percentage?",
+    10: "What player has the most career personal fouls?"
+  } -->
+
+  <form class="" method="post">
+    <div class="form-group">
+      <label for="exampleFormControlSelect1"><h4>Select Query from drop down:</h4></label>
+      <select class="form-control" id="demoSelection">
+        <!-- <option></option> -->
+        <option>What player has the most career assists?</option>
+        <option>What player has the highest career PPG?</option>
+        <option>What player has the highest career 3-pt FG percentage?</option>
+        <option>Which of these players has the all-time record for most appearances in the playoffs, with 259 games?</option>
+        <option>Which player appeared in the most regular season games of all time, with 1611 games?</option>
+        <option>Who has the most career rebounds?</option>
+        <option>What player appeared in the most career NBA games?</option>
+        <option>Who has the most career points in the playoffs?</option>
+        <option>What player has the highest career FT percentage?</option>
+        <option>What player has the most career personal fouls?</option>
+      </select>
+    </div>
+    <button type="button" class="btn btn-sm btn-outline-success" id="demo_submit">Submit</button>
+
+    <!-- <p id="demo_result"> </p>  -->
+    <p></p>
+    <form class="">
+      <div class="form-group">
+        <p>
+          <textarea class="form-control" id="demo_result" rows="1" readonly></textarea>
+        </p>
+      </div>
+    </form>
+
+    <!-- Capturing value of demo option here -->
+
+
+  <script type=text/javascript>
+
+  </script>
+
+
+    <script src=
+      "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script type=text/javascript>
+      $(function() {
+        $('a#demo_submit').bind('click', function() {
+        $.getJSON('/answer_query', {
+          proglang: $('input[name="proglang"]').val(),
+        }, function(data) {
+          $("#result").text(data.result);
+        });
+        return false;
+        });
+      });
+    </script>
+    <script>
+        $(document).ready(function() {
+          $("#demo_submit").click(function() {
+                var demo_option = $("#demoSelection option:selected");
+                // #$('#demo_result').text(demo_option.text());
+                $.getJSON('/answer_query', {
+                  query_q: demo_option.text(),
+                }, function(data) {
+                  $('#demo_result').text(data.result)
+                });
+                return false;
+                str = demo_option.text();
+                // alert(str);
+                //
+                // var res = str.match(/most career assists/);
+                // alert(res);
+
+                // if (str.match(/most career assists/)) {
+                //   $('#demo_result').text("John Stockton");
+                // }
+                // else if (str.match(/highest career PPG/)) {
+                //   $('#demo_result').text("...");
+                // }
+                // else if (str.match(/highest career 3-pt FG percentage/)) {
+                //   $('#demo_result').text("...");
+                // }
+                // else if (str.match(/all-time record for most appearances in the playoffs/)) {
+                //   $('#demo_result').text("LeBron James");
+                // }
+                // else if (str.match(/most regular season games of all time/)) {
+                //   $('#demo_result').text("Robert Parrish");
+                // }
+                // else if (str.match(/most career rebounds/)) {
+                //   $('#demo_result').text("Wilt Chamberlain");
+                // }
+                // else if (str.match(/appeared in the most career NBA games/)) {
+                //   $('#demo_result').text("Robert Parrish");
+                // }
+                // else if (str.match(/career points in the playoffs/)) {
+                //   $('#demo_result').text("LeBron James");
+                // }
+                // else if (str.match(/highest career FT percentage/)) {
+                //   $('#demo_result').text("Stephen Curry");
+                // }
+                // else if (str.match(/ most career personal fouls/)) {
+                //   $('#demo_result').text("Zydrunas Ilgauskas");
+                // }
+                // else {
+                //   $('#demo_result').text("...");
+                //   // $('#demo_result').text(demo_option.text());
+                // }
+
+                // alert(demo_option.text());
+                // alert($("#demoSelection").val());
+              });
+        });
+    </script>
+
+    <!-- own query -->
+
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1"><h4>Or Enter your Query here:</h4></label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+    </div>
+
+    <!-- <div class="form-group row">
+      <label for="queryinput" class="col-sm-1 col-form-label">Question</label>
+      <div class="col-sm-11">
+        <input type="text" class="form-control" id="queryinput" placeholder="Your question here">
+      </div>
+    </div> -->
+
+    <button type="button" class="btn btn-sm btn-outline-success">Submit</button>
+  </form>
+
+  <p>
+  </p>
+
+  <form class="">
+    <div class="form-group">
+      <p>
+        <input class="form-control form-control-lg" type="text" placeholder="Query output from Quotable" readonly rows="2">
+      </p>
+    </div>
+  </form>
+
+
+
+    <!-- <div class="row">
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+        <div class="icon-box">
+          <div class="icon"><i class="bx bxl-dribbble"></i></div>
+          <h4><a href="">Lorem Ipsum</a></h4>
+          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+        <div class="icon-box">
+          <div class="icon"><i class="bx bx-file"></i></div>
+          <h4><a href="">Sed ut perspici</a></h4>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+        <div class="icon-box">
+          <div class="icon"><i class="bx bx-tachometer"></i></div>
+          <h4><a href="">Magni Dolores</a></h4>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+        <div class="icon-box">
+          <div class="icon"><i class="bx bx-layer"></i></div>
+          <h4><a href="">Nemo Enim</a></h4>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+        </div>
+      </div>
+
+    </div> -->
+
+
+  </div>
+</section><!-- End Services Section -->
