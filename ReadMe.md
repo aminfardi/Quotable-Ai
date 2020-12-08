@@ -9,10 +9,10 @@ Generally, you will need to be an expert at Structured Query Language (SQL) to q
 * You have to generate instantaneous insights for your execs as a part of an Enterprise BI Team
 * You are a lay consumer who wants insights into data, but don't have SQL expertise
 
-## Quotable for Enterprise BI
+### Quotable for Enterprise BI
 As an executive in a large enterprise, you want your BI team to provide quick insights on revenues for your product lines. However, every time you ask a question, the BI team needs another week to get back to you. With Quotable, you don't need to wait, and you don't need to know SQL either! Just ask your question in English and get an instantaneous response.
 
-## Quotable for Consumers
+### Quotable for Consumers
 You are a basketball enthusiast, say, and no stats expert. You want to know how well Lebron James did in the 2020 season compared to others. You do a Google search, but there are no straight answers. What do you do? With Quotable, you just type your question in, and we do the rest of the magic and get you a straight answer.
 
 ## Key Technologies
