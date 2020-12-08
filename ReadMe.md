@@ -1,4 +1,4 @@
-#Quotable: Making Data Come Alive!
+# Quotable: Making Data Come Alive!
 Quotable is a data assistant that helps consumers and enterprises query their datasets in
 natural language. Quotable uses cutting-edge transformers (BERT, Google TAPAS for tabular
 data) and layers our innovation called "AQuA" (Augmentation for Question Answering) to
