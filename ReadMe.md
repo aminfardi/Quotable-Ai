@@ -15,7 +15,7 @@ As an executive in a large enterprise, you want your BI team to provide quick in
 ## Quotable for Consumers
 You are a basketball enthusiast, say, and no stats expert. You want to know how well Lebron James did in the 2020 season compared to others. You do a Google search, but there are no straight answers. What do you do? With Quotable, you just type your question in, and we do the rest of the magic and get you a straight answer.
 
-##Key Technologies
+## Key Technologies
 Quotable uses two main technologies for its product:
 
 1. __Augmentation for Question Answering:__ AQuA is the patentable innovation which prepares user tables for querying. AQuA has 3 major functions: splitting larger tables into smaller ones to feed our NLP model, preprocessing and modification of table rows and columns, and augmenting existing rows and columns with derived rows and columns.
