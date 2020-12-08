@@ -4,7 +4,7 @@ natural language. Quotable uses cutting-edge transformers (BERT, Google TAPAS fo
 data) and layers our innovation called "AQuA" (Augmentation for Question Answering) to
 provide simple answers to queries in English.
 
-Try Quotable on our website: [quotableai.com](www.quotableai.com)
+Try Quotable on our website: [quotableai.com](http://quotableai.com/)
 
 Generally, you will need to be an expert at Structured Query Language (SQL) to query tables. SQL can be complex and difficult to learn. With Quotable, you can query tables in plain English! It is very simple to use - Just upload your tables, ask your questions, and make your data talk to you. Quotable is perfect for you if you are experiencing "SQL pains" such as below:
 
