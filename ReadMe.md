@@ -1,48 +1,28 @@
-Setup (only complete these stesps once):
-Create your QuoTable folder (i.e. C:\QuoTable) and run the commands below from that folder:
-git clone https://github.com/google-research/tapas.git
-pip install ./tapas
-gsutil cp gs://tapas_models/2020_04_21/tapas_sqa_base.zip . && unzip tapas_sqa_base.zip
-** in my case the unzip portion of this command errored so I manually unziped the file
-copy all 6 files from the QuoTable Local Install folder to your QuoTable folder
+#Quotable: Making Data Come Alive!
+Quotable is a data assistant that helps consumers and enterprises query their datasets in
+natural language. Quotable uses cutting-edge transformers (BERT, Google TAPAS for tabular
+data) and layers our innovation called "AQuA" (Augmentation for Question Answering) to
+provide simple answers to queries in English.
 
-To Run QuoTable:
-python QuoTable_UI.py
+Generally, you will need to be an expert at Structured Query Language (SQL) to query tables. SQL can be complex and difficult to learn. With Quotable, you can query tables in plain English! It is very simple to use - Just upload your tables, ask your questions, and make your data talk to you. Quotable is perfect for you if you are experiencing "SQL pains" such as below:
 
-Once in QuoTable the basic UI should explain itself.  There are only 3 commands (including exit).
-When entering the table name include the extension of the file (i.e. NBATop200.csv)
-Current QuoTable is very verbose as it runs (due to TAPAS) hopefully this is not an issue once we go to web.
-Currently QuoTable is not user friendly as I was not expecting this UI to be relevant once we go to web.
-If we decide to do a local demo for presentation please let me with some lead time so I can clean it up.
+* You have to generate instantaneous insights for your execs as a part of an Enterprise BI Team
+* You are a lay consumer who wants insights into data, but don't have SQL expertise
+
+## Quotable for Enterprise BI
+As an executive in a large enterprise, you want your BI team to provide quick insights on revenues for your product lines. However, every time you ask a question, the BI team needs another week to get back to you. With Quotable, you don't need to wait, and you don't need to know SQL either! Just ask your question in English and get an instantaneous response.
+
+## Quotable for Consumers
+You are a basketball enthusiast, say, and no stats expert. You want to know how well Lebron James did in the 2020 season compared to others. You do a Google search, but there are no straight answers. What do you do? With Quotable, you just type your question in, and we do the rest of the magic and get you a straight answer.
+
+##Key Technologies
+Quotable uses two main technologies for its product:
+
+1. __Augmentation for Question Answering:__ AQuA is the patentable innovation which prepares user tables for querying. AQuA has 3 major functions: splitting larger tables into smaller ones to feed our NLP model, preprocessing and modification of table rows and columns, and augmenting existing rows and columns with derived rows and columns.
+
+2. __Pretrained BERT model for Question Answering:__  We used a BERT model which is pretrained with table data to perform natural language based Question Answering. For our first version of Quotable, we are using a Google model called TAPAS [1].
 
 
-AMIN EDIT:
-Setup (only complete these stesps once):
-Create your QuoTable folder (i.e. C:\QuoTable) and run the commands below from that folder:
-### Need to use another version instead of below:
-#### git clone https://github.com/google-research/tapas.git
-##Manually download this version:
-https://github.com/google-research/tapas/tree/0d86b11d7129f1db01757fa7ebead78e80dd8ba0
+### References
 
-pip install tapas
-
-        IMPORTANT: if you get the following error:
-        ERROR: Cannot uninstall 'PyYAML'. It is a distutils installed project and thus w e cannot accurately determine which files belong to it which would lead to only a partial uninstall.
-
-        Instead do:
-        pip install tapas --ignore-installed PyYAML
-
-pip install gsutil
-
-gsutil cp gs://tapas_models/2020_04_21/tapas_sqa_base.zip . && unzip tapas_sqa_base.zip
-** in my case the unzip portion of this command errored so I manually unziped the file
-copy all 6 files from the QuoTable Local Install folder to your QuoTable folder
-
-To Run QuoTable:
-python QuoTable_UI.py
-
-Once in QuoTable the basic UI should explain itself.  There are only 3 commands (including exit).
-When entering the table name include the extension of the file (i.e. NBATop200.csv)
-Current QuoTable is very verbose as it runs (due to TAPAS) hopefully this is not an issue once we go to web.
-Currently QuoTable is not user friendly as I was not expecting this UI to be relevant once we go to web.
-If we decide to do a local demo for presentation please let me with some lead time so I can clean it up.
+[1] Jonathan Herzig, Pawel Krzysztof Nowak, Thomas Müller, Francesco Piccinno, and Julian Eisenschlos. 2020. [TaPas: Weakly supervised table parsing via pre-training](https://www.aclweb.org/anthology/2020.acl-main.398/). In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, pages 4320– 4333, Online. Association for Computational Linguistics.
