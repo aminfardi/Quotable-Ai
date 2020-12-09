@@ -24,6 +24,25 @@ Quotable uses two main technologies for its product:
 
 2. __Pretrained BERT model for Question Answering:__  We used a BERT model which is pretrained with table data to perform natural language based Question Answering. For our first version of Quotable, we are using a Google model called TAPAS [1].
 
+## Local Install
+
+To launch the app locally, clone the repo and install requirements file:
+```
+pip install -r requirements.txt
+```
+Next, install TAPAS:
+```
+pip install ./tapas
+```
+Download the model and unzip:
+```
+gsutil cp gs://tapas_models/2020_04_21/tapas_sqa_base.zip .
+unzip tapas_sqa_base.zip
+```
+Finally, launch the app:
+```
+python application.py
+```
 
 ## References
 
